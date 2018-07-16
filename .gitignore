@@ -1,0 +1,5 @@
+.mypy_cache
+.pyre
+.vscode
+.pytest_cache
+.pyre_configuration
