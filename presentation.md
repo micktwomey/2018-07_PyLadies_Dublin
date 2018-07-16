@@ -1,9 +1,13 @@
 # What's New in Python 3.7
+# :snake:
 
 ---
 
 > Okay, here we go.
 > The short, short version!
+-- Minister, Spaceballs (1987)
+
+![](ronny_graham.jpg)
 
 ---
 
@@ -198,6 +202,8 @@ async def hello_world():
     """World's most async Hello World"""
     print("Hello World!")
 
+# Starts event loop, schedules task,
+# waits for result, closes loop.
 asyncio.run(hello_world())
 ```
 
@@ -209,7 +215,7 @@ import asyncio, contextvars
 message = contextvars.ContextVar("message")
 
 async def read_message(i, msg):
-    message.set(msg)
+    message.set(msg)  # very contrived example
     await asyncio.sleep(i)  # pretend I'm a HTTP request
     print(f"Message for {i} is {message.get()!r} (originally {msg!r})")
 
