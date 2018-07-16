@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+from dataclasses import dataclass
+
 # From https://realpython.com/python37-new-features/
+@dataclass
 class Tree:
-    def __init__(self, left: Tree, right: Tree) -> None:
-        self.left = left
-        self.right = right
+    left: Tree
+    right: Tree

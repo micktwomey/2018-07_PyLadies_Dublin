@@ -1,4 +1,7 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class Tree:
-    def __init__(self, left: Tree, right: Tree) -> None:
-        self.left = left
-        self.right = right
+    left: Tree
+    right: Tree

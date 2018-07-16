@@ -1,9 +1,7 @@
-from __future__ import annotations
-
-import dataclasses
+from dataclasses import dataclass
 
 
-@dataclasses.dataclass
+@dataclass
 class Author:
     name: str
 
@@ -11,7 +9,7 @@ class Author:
         return self.name == "H.P. Lovecraft"
 
 
-@dataclasses.dataclass
+@dataclass
 class Book:
     title: str
     author: Author

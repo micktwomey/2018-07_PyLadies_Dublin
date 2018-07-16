@@ -4,10 +4,6 @@ def foo(bar):
     return ham
 
 
-def main():
+if __name__ == "__main__":
     foo(20)
     foo("ham")
-
-
-if __name__ == "__main__":
-    main()
